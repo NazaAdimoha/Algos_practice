@@ -1,0 +1,12 @@
+function count(array){
+    let obj = {}
+    for(let key of array){
+        if(obj[key]){
+            obj[key]++
+        }else{
+            obj[key] = 1
+        }
+    }
+    return obj
+}
+console.log(count([1,2,2,4]))
