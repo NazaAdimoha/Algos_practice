@@ -15,3 +15,24 @@
 // Output: true
 
 
+var containsDuplicate = function(nums) {
+    //create a buffer to store intergers first of
+
+    //create variable to identify unique value
+    const set = new Set();
+
+    //I want to loop through the array to check for the duplicate value
+    for(let num of nums) {
+        if(set.has(num)) return true
+
+        //here's whwere we add to the buffer
+        set.add(num)
+    }
+    //return false if nums is not a duplicate
+    return false
+};
+
+var containsDuplicate = function(nums) {
+    // create an unordered set then check if the size of the set is equal to the size of the array
+    return new Set(nums).size !== nums.length;
+};
