@@ -32,6 +32,8 @@ var containsDuplicate = function(nums) {
     return false
 };
 
+
+//second solution using the size of the set
 var containsDuplicate = function(nums) {
     // create an unordered set then check if the size of the set is equal to the size of the array
     return new Set(nums).size !== nums.length;
